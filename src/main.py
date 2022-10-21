@@ -2,6 +2,25 @@ from enum import Enum
 from fastapi import FastAPI, Body, Path, Query, HTTPException, status
 from .calculator import calculator as calc
 
+# DEBUG: Detailed information, typically of interest only when diagnosing problems.
+# INFO: Confirmation that things are working as expected.
+# WARNING: An indication that something unexpected happened, or indicative of some problem
+# in the near future (e.g. ‘disk space low’). The software is still working as expected.
+# ERROR: Due to a more serious problem, the software has not been able to perform some function.
+# CRITICAL: A serious error, indicating that the program itself may be unable to continue running.
+
+"""
+Escriba aqui su codigo para Logging, que guarde:
+ - Dia y hora
+ - Nivel
+ - Nombre
+ - Mensaje
+
+Registrar: 
+- Entradas de datos.
+- Salidas de datos.
+"""
+
 
 class CalculatorFormat(str, Enum):
     SHORT = "digital"

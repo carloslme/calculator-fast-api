@@ -1,6 +1,24 @@
 import string
 import numpy as np
 
+# DEBUG: Detailed information, typically of interest only when diagnosing problems.
+# INFO: Confirmation that things are working as expected.
+# WARNING: An indication that something unexpected happened, or indicative of some problem
+# in the near future (e.g. ‘disk space low’). The software is still working as expected.
+# ERROR: Due to a more serious problem, the software has not been able to perform some function.
+# CRITICAL: A serious error, indicating that the program itself may be unable to continue running.
+
+"""
+Escriba aqui su codigo para Logging, que guarde:
+ - Dia y hora
+ - Nivel
+ - Nombre
+ - Mensaje
+
+Registrar: 
+- Operaciones internas.
+"""
+
 
 def get_fractions(frac_str: (int or float or string)) -> (int or float):
     """Checks a number and returns to float type.
