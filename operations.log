@@ -1,0 +1,6 @@
+2022-10-21 13:48:32,088:DEBUG:src.calculator.calculator:get_sum: v1=5.0, v2=5.0
+2022-10-21 13:48:32,088:DEBUG:src.calculator.calculator:get_subtract: minuend=1.25, subtrahend=0.75
+2022-10-21 13:48:32,091:DEBUG:src.calculator.calculator:get_sum: v1=5, v2=5
+2022-10-21 13:48:32,091:DEBUG:src.calculator.calculator:get_subtract: minuend=1.25, subtrahend=0.75
+2022-10-21 13:48:32,092:DEBUG:src.calculator.calculator:get_sum: v1=8, v2=1.4
+2022-10-21 13:48:32,093:DEBUG:src.calculator.calculator:get_subtract: minuend=15, subtrahend=0.375
