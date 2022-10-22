@@ -20,7 +20,6 @@ Values are required after de endpoint.
 async def sum(v1: int, v2: int):
     result = int(calc.sum(v1, v2))
     print(f"'resultado': {result}")
-    print(f"'resultado': {result}")
     return {"resultado": result}
 
 
@@ -42,7 +41,6 @@ async def subtract(v1: float = 1.0, v2: float = 2.0):
 async def divide(v1: float, v2: float):
     if v2 == 0 or v1 == 0:
         print("resultado: cannot divide with 0")
-        print("'resultado': 'cannot divide with 0'")
         return {"resultado": "can't divide with 0"}
 
     result = int(calc.divide(v1, v2))
@@ -82,7 +80,6 @@ async def divide_format(
 ):
     if v2 == 0 or v1 == 0:
         print("resultado: cannot divide with 0")
-        print("'resultado': 'cannot divide with 0'")
         return {"resultado": "can't divide with 0"}
 
     result = int(calc.divide(v1, v2))
@@ -105,15 +102,17 @@ an error if not provided when calling create_user().
 
 @app.post("/multiply-parameters")
 async def multiply(text: str = Body(...)):  # (...) means that the argument is required
+    """
+    Insert a*b, where a and b are int types.
+    """
     try:
         values = text.split("*")
         v1 = int(values[0])
         v2 = int(values[1])
-
+        print(f"v1:{v1}, v2:{v2}")
         print(type(v1), type(v2))
         if isinstance(v1, int) and isinstance(v2, int):
             result = int(calc.multiply(v1, v2))
-            print(f"'resultado': {result}")
             print(f"'resultado': {result}")
             return {"resultado": result}
 
